@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
   background: #0a0a0a;
@@ -122,6 +126,7 @@ footer {
 
 /* CONTACT PAGE */
 
+
 .page-hero {
   text-align: center;
   padding: 60px 20px 30px;
@@ -130,8 +135,10 @@ footer {
 .contact-container {
   display: flex;
   gap: 40px;
-  padding: 40px 10%;
+  padding: 40px 20px; /* change from 10% to 20px */
   flex-wrap: wrap;
+  max-width: 900px; /* optional: same width as performances */
+  margin: 0 auto;   /* center it like other pages */
 }
 
 .contact-info {
