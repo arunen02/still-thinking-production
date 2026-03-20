@@ -229,3 +229,21 @@ footer {
   opacity: 0.7;
   margin-top: 10px;
 }
+
+/* Poster hover zoom effect */
+
+.show-card img {
+  width: 180px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.show-card img:hover {
+  transform: scale(1.08);
+}
+
+.show-card a {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 4px;
+}
