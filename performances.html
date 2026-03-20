@@ -29,9 +29,7 @@
   <h3>Upcoming / Ongoing</h3>
 
   <div class="show-card">
-    <a href="images/unwell.jpg" target="_blank">
-      <img src="images/unwell.jpg" alt="I'm Just a Little Unwell Poster">
-    </a>
+      <img src="images/unwell.jpg" alt="I'm Just a Little Unwell Poster" class="poster" onclick="openModal(this)">
     <div class="show-info">
       <h4>I'm Just a Little Unwell</h4>
       <p><strong>Date:</strong> May 2026</p>
@@ -49,9 +47,7 @@
   <h3>Past Performances</h3>
 
   <div class="show-card">
-    <a href="images/thalaiva.jpeg" target="_blank">
-      <img src="images/thalaiva.jpeg" alt="Tribute to Thalaiva Poster">
-    </a>
+      <img src="images/thalaiva.jpeg" alt="Tribute to Thalaiva Poster" class="poster" onclick="openModal(this)">
     <div class="show-info">
       <h4>Tribute to Thalaiva</h4>
       <p><strong>Year:</strong> 2025</p>
@@ -60,9 +56,7 @@
   </div>
 
   <div class="show-card">
-    <a href="images/jeratan.jpeg" target="_blank">
-      <img src="images/jeratan.jpeg" alt="Jeratan Takdir Poster">
-    </a>
+      <img src="images/jeratan.jpeg" alt="Jeratan Takdir Poster" class="poster" onclick="openModal(this)">
     <div class="show-info">
       <h4>Jeratan Takdir</h4>
       <p><strong>Year:</strong> 2025</p>
@@ -71,9 +65,7 @@
   </div>
 
   <div class="show-card">
-    <a href="images/labyrinth.jpeg" target="_blank">
-      <img src="images/labyrinth.jpeg" alt="Labyrinth of Souls Poster">
-    </a>
+      <img src="images/labyrinth.jpeg" alt="Labyrinth of Souls Poster" class="poster" onclick="openModal(this)">
     <div class="show-info">
       <h4>Labyrinth of Souls</h4>
       <p><strong>Year:</strong> 2024</p>
@@ -86,5 +78,22 @@
 <footer>
   <p>© 2026 Still Thinking Production</p>
 </footer>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openModal(img) {
+  document.getElementById("imageModal").style.display = "block";
+  document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
 </body>
 </html>
