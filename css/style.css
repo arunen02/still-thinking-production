@@ -288,3 +288,75 @@ footer {
 .poster:hover {
   transform: scale(1.08);
 }
+
+/* NAVBAR */
+
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap; /* 🔥 THIS FIXES THE ISSUE */
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* DROPDOWN */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;   /* directly under Performances */
+  left: 0;
+  background: #111;
+  min-width: 200px;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+/* Show dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown items */
+.dropdown-content li {
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+
+/* SUB DROPDOWN (years → shows) */
+
+.dropdown-sub {
+  position: relative;
+}
+
+.dropdown-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;   /* appear to the right */
+  top: 0;
+  background: #222;
+  min-width: 180px;
+}
+
+/* Show sub menu */
+.dropdown-sub:hover ul {
+  display: block;
+}
+
